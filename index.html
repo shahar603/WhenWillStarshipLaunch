@@ -3,10 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>When Will Starship Launch?</title>
+    <title>When Will Starship Launch</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src='main.js'></script>
 </head>
 <body>
     <div class="background">
@@ -82,7 +83,6 @@
             document.getElementById("hours").innerHTML = pad(hours, 2);
             document.getElementById("minutes").innerHTML = pad(minutes, 2);
             document.getElementById("seconds").innerHTML = pad(seconds, 2);
-
         }
 
         setDate(countDownDate);
@@ -90,12 +90,6 @@
         // Update the count down every 1 second
         var x = setInterval(function() {
             setDate(countDownDate);
-        
-          // If the count down is finished, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-          }
         }, 1000);
         </script>
 </body>
